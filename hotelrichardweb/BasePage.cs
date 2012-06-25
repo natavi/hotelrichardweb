@@ -13,7 +13,7 @@ using System.Web.UI.HtmlControls;
 namespace hotelrichardweb
 {
     /// <summary>
-    /// Custom base page used for all web forms.
+    /// Custom base page TO CHECK ERRORS
     /// </summary>
     public class BasePage : Page
     {
