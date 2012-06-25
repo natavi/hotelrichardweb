@@ -1,0 +1,272 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs"  Inherits="hotelrichardweb.SiteMaster"  %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="site.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 622px;
+        }
+    </style>
+    </head>
+<body class="fond">
+    <form id="Form1" runat="server">
+    <div>
+        <div>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.effects.core.js"></script>
+<script type="text/javascript" src="js/jquery.effects.blind.js"></script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32617929-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+<style type="text/css">
+ 
+.ddlImg
+{
+      width: 43px;
+      height: 33px;
+}
+ 
+.ddlText
+{
+      font-size: 14px;
+      cursor: pointer;
+      float: left;
+      width: 165px;
+      vertical-align: top;
+}
+
+#effect
+{
+      width: 188px;
+      height: 135px;
+      position: absolute;
+      z-index: 2;
+      overflow: auto;
+}
+
+.textbox
+{
+      width: 185px;
+      height: 14px;
+}
+
+body
+{
+      font-size: 62.5%;
+}
+ 
+    .style2
+    {
+        width: 62%;
+        height: 27px;
+    }
+ 
+    .style3
+    {
+        height: 15px;
+    }
+    .style4
+    {
+        height: 70px;
+    }
+ 
+    .style5
+    {
+        width: 80px;
+    }
+    .style8
+    {
+        height: 15px;
+        width: 34px;
+    }
+    .style9
+    {
+        width: 34px;
+    }
+    .style10
+    {
+        width: 37px;
+    }
+    .style11
+    {
+        height: 15px;
+        width: 37px;
+    }
+    .style15
+    {
+        height: 70px;
+        width: 1135px;
+        font-family:Trebuchet MS;
+    }
+    .style12
+    {
+        width: 272px;
+    }
+    
+    .style22
+    {
+        width: 100%;
+    }
+    .style23
+    {
+        width: 115px;
+    }
+    .style24
+    {
+        width: 95px;
+    }
+    
+ 
+    .style25
+    {
+        width: 110px;
+    }
+    
+ 
+</style>
+
+
+
+
+
+<table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 1516px">
+  <tr>
+    <td>
+    <table>
+    <tr>
+    <td class="style4"><img src="images/header.png" alt="Hotel Richard" height="76" 
+            style="width: 852px" /></td>
+    <td width="150" align="left" class="style5"> &nbsp;</td>
+     <td align="center" class="style12">
+        
+         <!--table class="style2">
+             <tr>
+                 <td class="style9">
+                     <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="gif/fr.gif" onclick="ImageButton1_Click" OnClientClick="ImageButton1_Click"  EnableViewState="true"/>
+                 </td>
+                 <td class="style9">
+                     <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="gif/us.gif" onclick="ImageButton4_Click"  OnClientClick="ImageButton4_Click" EnableViewState="true"/>
+                 </td>
+                 <td class="style10">
+                     <asp:ImageButton ID="ImageButton7" runat="server" ImageUrl="gif/ru.gif" onclick="ImageButton7_Click" OnClientClick="ImageButton7_Click" EnableViewState="true"/>
+                 </td>
+                 <td>
+                     <asp:ImageButton ID="ImageButton10" runat="server" ImageUrl="gif/cz.gif" onclick="ImageButton10_Click" OnClientClick="ImageButton10_Click" EnableViewState="true"/>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="style8">
+                     <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="gif/england.gif" onclick="ImageButton2_Click" OnClientClick="ImageButton2_Click" EnableViewState="true"/>
+                 </td>
+                 <td class="style8">
+                       <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="gif/es.gif" onclick="ImageButton5_Click" OnClientClick="ImageButton5_Click" EnableViewState="true"/>
+                 </td>
+                 <td class="style11">
+                     <asp:ImageButton ID="ImageButton8" runat="server"  ImageUrl="gif/pt.gif" onclick="ImageButton8_Click" OnClientClick="ImageButton8_Click" EnableViewState="true"/>
+                 </td>
+                 <td class="style3">
+                     <asp:ImageButton ID="ImageButton11" runat="server" ImageUrl="gif/de.gif" 
+                         onclick="ImageButton11_Click" OnClientClick="ImageButton11_Click" EnableViewState="false" Width="25px" />
+                 </td>
+             </tr>
+             <tr>
+                 <td class="style9">
+                     <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="gif/ma.gif" onclick="ImageButton3_Click" OnClientClick="ImageButton3_Click" EnableViewState="true" />
+                 </td>
+                 <td class="style9">
+                       <asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="gif/ro.gif" onclick="ImageButton6_Click" OnClientClick="ImageButton6_Click" EnableViewState="true"/>
+                 </td>
+                 <td class="style10">
+                     <asp:ImageButton ID="ImageButton9" runat="server" ImageUrl="gif/pl.gif" 
+                         onclick="ImageButton9_Click" OnClientClick="ImageButton9_Click" EnableViewState="true"/>
+                 </td>
+                 <td>
+                     <asp:ImageButton ID="ImageButton12" runat="server" ImageUrl="gif/cn.gif" onclick="ImageButton12_Click"  OnClientClick="ImageButton12_Click" EnableViewState="true"/>
+                 </td>
+                 </tr>
+              <tr>
+                 <td class="style9">
+                     <asp:ImageButton ID="ImageButton13" runat="server" ImageUrl="gif/it.gif" onclick="ImageButton13_Click" OnClientClick="ImageButton13_Click" EnableViewState="true" />
+                 </td>
+                 <td class="style9">
+                       <asp:ImageButton ID="ImageButton14" runat="server" ImageUrl="gif/nl.gif" onclick="ImageButton14_Click" OnClientClick="ImageButton14_Click" EnableViewState="true"/>
+                 </td>
+                 <td class="style10">
+                     <asp:ImageButton ID="ImageButton15" runat="server" ImageUrl="gif/in.gif"   onclick="ImageButton15_Click"  OnClientClick="ImageButton15_Click" EnableViewState="true"/>
+                 </td>
+                 <td>
+                     <asp:ImageButton ID="ImageButton16" runat="server" ImageUrl="gif/il.gif" onclick="ImageButton16_Click"  OnClientClick="ImageButton16_Click" EnableViewState="true"/>
+                 </td>
+             </tr>
+              
+         </table-->
+         
+     </td>
+     
+
+ 
+     </tr>
+     
+     <tr>
+     <td colspan="1">
+     
+     
+     </td>
+     <td colspan="2">
+     
+     
+         <table class="style22">
+             <tr>
+                 <td class="style23">
+                     <asp:Literal ID="Literal1" runat="server" Text="Pas Encore de Compte?"></asp:Literal>
+                 </td>
+                 <td class="style24">
+                     <asp:HyperLink ID="HyperLink1" NavigateUrl="~/CreateUser.aspx" runat="server">Crees le ici!</asp:HyperLink>
+                 </td>
+                 <td class="style25">
+                     <asp:Literal ID="Literal2" runat="server" 
+                         Text="Tu veux modifier ou annuler ta resa?"></asp:Literal>
+                 </td>
+                 <td>
+                     <asp:HyperLink ID="HyperLink2" NavigateUrl="~/AskPinCode.aspx" runat="server">Cliques ici!</asp:HyperLink>
+                 </td>
+             </tr>
+         </table>
+     
+     
+     </td>
+     </tr>
+     <tr>
+           <td class="style1" align="center" > 
+            <div class="style15">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            </div>
+            </td>
+            </tr>
+     </table>
+<div id="footer">
+    <div id="mentions">Copyright &copy; 2011 H&ocirc;tel Richard - Tous droits r&eacute;serv&eacute;s - <a href="mentions_legales.aspx" class="footer">Mentions L&eacute;gales</a> - <a href="http://www.webadium.com" target="_blank" class="footer">Cr&eacute;ation de site internet</a> : <a href="http://www.webadium.com" target="_blank" class="footer">Webadium</a></div>
+    </div>
+    </form>
+</body>
+</html>

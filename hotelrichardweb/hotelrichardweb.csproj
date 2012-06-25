@@ -1,0 +1,1251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{101D9386-F76A-4CC7-8F3F-5BC73B491B02}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hotelrichardweb</RootNamespace>
+    <AssemblyName>hotelrichardweb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SecuritySwitch">
+      <HintPath>.\SecuritySwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="acces.aspx" />
+    <Content Include="accesb.aspx" />
+    <Content Include="ad.gif" />
+    <Content Include="admin.aspx" />
+    <Content Include="App_LocalResources\index.aspx.en.resx" />
+    <Content Include="askPincode.aspx" />
+    <Content Include="BasePage.aspx" />
+    <Content Include="blog.aspx" />
+    <Content Include="cancelOK.aspx" />
+    <Content Include="chambres.aspx" />
+    <Content Include="channel.html" />
+    <Content Include="comments.aspx" />
+    <Content Include="confirmcancel.aspx" />
+    <Content Include="contactresa.aspx" />
+    <Content Include="confirm.aspx" />
+    <Content Include="CreateUser.aspx" />
+    <Content Include="detailsCB.aspx" />
+    <Content Include="detailsperso.aspx" />
+    <Content Include="dropdownpictures.ascx" />
+    <Content Include="error.aspx" />
+    <Content Include="gif\ad.gif" />
+    <Content Include="gif\ae.gif" />
+    <Content Include="gif\af.gif" />
+    <Content Include="gif\ag.gif" />
+    <Content Include="gif\ai.gif" />
+    <Content Include="gif\al.gif" />
+    <Content Include="gif\am.gif" />
+    <Content Include="gif\an.gif" />
+    <Content Include="gif\ao.gif" />
+    <Content Include="gif\ar.gif" />
+    <Content Include="gif\as.gif" />
+    <Content Include="gif\at.gif" />
+    <Content Include="gif\au.gif" />
+    <Content Include="gif\aw.gif" />
+    <Content Include="gif\ax.gif" />
+    <Content Include="gif\az.gif" />
+    <Content Include="gif\ba.gif" />
+    <Content Include="gif\bb.gif" />
+    <Content Include="gif\bd.gif" />
+    <Content Include="gif\be.gif" />
+    <Content Include="gif\bf.gif" />
+    <Content Include="gif\bg.gif" />
+    <Content Include="gif\bh.gif" />
+    <Content Include="gif\bi.gif" />
+    <Content Include="gif\bj.gif" />
+    <Content Include="gif\bm.gif" />
+    <Content Include="gif\bn.gif" />
+    <Content Include="gif\bo.gif" />
+    <Content Include="gif\br.gif" />
+    <Content Include="gif\bs.gif" />
+    <Content Include="gif\bt.gif" />
+    <Content Include="gif\bv.gif" />
+    <Content Include="gif\bw.gif" />
+    <Content Include="gif\by.gif" />
+    <Content Include="gif\bz.gif" />
+    <Content Include="gif\ca.gif" />
+    <Content Include="gif\catalonia.gif" />
+    <Content Include="gif\cc.gif" />
+    <Content Include="gif\cd.gif" />
+    <Content Include="gif\cf.gif" />
+    <Content Include="gif\cg.gif" />
+    <Content Include="gif\ch.gif" />
+    <Content Include="gif\ci.gif" />
+    <Content Include="gif\ck.gif" />
+    <Content Include="gif\cl.gif" />
+    <Content Include="gif\cm.gif" />
+    <Content Include="gif\cn.gif" />
+    <Content Include="gif\co.gif" />
+    <Content Include="gif\cr.gif" />
+    <Content Include="gif\cs.gif" />
+    <Content Include="gif\cu.gif" />
+    <Content Include="gif\cv.gif" />
+    <Content Include="gif\cx.gif" />
+    <Content Include="gif\cy.gif" />
+    <Content Include="gif\cz.gif" />
+    <Content Include="gif\de.gif" />
+    <Content Include="gif\dj.gif" />
+    <Content Include="gif\dk.gif" />
+    <Content Include="gif\dm.gif" />
+    <Content Include="gif\do.gif" />
+    <Content Include="gif\dz.gif" />
+    <Content Include="gif\ec.gif" />
+    <Content Include="gif\ee.gif" />
+    <Content Include="gif\eg.gif" />
+    <Content Include="gif\eh.gif" />
+    <Content Include="gif\england.gif" />
+    <Content Include="gif\er.gif" />
+    <Content Include="gif\es.gif" />
+    <Content Include="gif\et.gif" />
+    <Content Include="gif\europeanunion.gif" />
+    <Content Include="gif\fam.gif" />
+    <Content Include="gif\fi.gif" />
+    <Content Include="gif\fj.gif" />
+    <Content Include="gif\fk.gif" />
+    <Content Include="gif\fm.gif" />
+    <Content Include="gif\fo.gif" />
+    <Content Include="gif\fr.gif" />
+    <Content Include="gif\ga.gif" />
+    <Content Include="gif\gb.gif" />
+    <Content Include="gif\gd.gif" />
+    <Content Include="gif\ge.gif" />
+    <Content Include="gif\gf.gif" />
+    <Content Include="gif\gh.gif" />
+    <Content Include="gif\gi.gif" />
+    <Content Include="gif\gl.gif" />
+    <Content Include="gif\gm.gif" />
+    <Content Include="gif\gn.gif" />
+    <Content Include="gif\gp.gif" />
+    <Content Include="gif\gq.gif" />
+    <Content Include="gif\gr.gif" />
+    <Content Include="gif\gs.gif" />
+    <Content Include="gif\gt.gif" />
+    <Content Include="gif\gu.gif" />
+    <Content Include="gif\gw.gif" />
+    <Content Include="gif\gy.gif" />
+    <Content Include="gif\hk.gif" />
+    <Content Include="gif\hm.gif" />
+    <Content Include="gif\hn.gif" />
+    <Content Include="gif\hr.gif" />
+    <Content Include="gif\ht.gif" />
+    <Content Include="gif\hu.gif" />
+    <Content Include="gif\id.gif" />
+    <Content Include="gif\ie.gif" />
+    <Content Include="gif\il.gif" />
+    <Content Include="gif\in.gif" />
+    <Content Include="gif\io.gif" />
+    <Content Include="gif\iq.gif" />
+    <Content Include="gif\ir.gif" />
+    <Content Include="gif\is.gif" />
+    <Content Include="gif\it.gif" />
+    <Content Include="gif\jm.gif" />
+    <Content Include="gif\jo.gif" />
+    <Content Include="gif\jp.gif" />
+    <Content Include="gif\ke.gif" />
+    <Content Include="gif\kg.gif" />
+    <Content Include="gif\kh.gif" />
+    <Content Include="gif\ki.gif" />
+    <Content Include="gif\km.gif" />
+    <Content Include="gif\kn.gif" />
+    <Content Include="gif\kp.gif" />
+    <Content Include="gif\kr.gif" />
+    <Content Include="gif\kw.gif" />
+    <Content Include="gif\ky.gif" />
+    <Content Include="gif\kz.gif" />
+    <Content Include="gif\la.gif" />
+    <Content Include="gif\lb.gif" />
+    <Content Include="gif\lc.gif" />
+    <Content Include="gif\li.gif" />
+    <Content Include="gif\lk.gif" />
+    <Content Include="gif\lr.gif" />
+    <Content Include="gif\ls.gif" />
+    <Content Include="gif\lt.gif" />
+    <Content Include="gif\lu.gif" />
+    <Content Include="gif\lv.gif" />
+    <Content Include="gif\ly.gif" />
+    <Content Include="gif\ma.gif" />
+    <Content Include="gif\mc.gif" />
+    <Content Include="gif\md.gif" />
+    <Content Include="gif\me.gif" />
+    <Content Include="gif\mg.gif" />
+    <Content Include="gif\mh.gif" />
+    <Content Include="gif\mk.gif" />
+    <Content Include="gif\ml.gif" />
+    <Content Include="gif\mm.gif" />
+    <Content Include="gif\mn.gif" />
+    <Content Include="gif\mo.gif" />
+    <Content Include="gif\mp.gif" />
+    <Content Include="gif\mq.gif" />
+    <Content Include="gif\mr.gif" />
+    <Content Include="gif\ms.gif" />
+    <Content Include="gif\mt.gif" />
+    <Content Include="gif\mu.gif" />
+    <Content Include="gif\mv.gif" />
+    <Content Include="gif\mw.gif" />
+    <Content Include="gif\mx.gif" />
+    <Content Include="gif\my.gif" />
+    <Content Include="gif\mz.gif" />
+    <Content Include="gif\na.gif" />
+    <Content Include="gif\nc.gif" />
+    <Content Include="gif\ne.gif" />
+    <Content Include="gif\nf.gif" />
+    <Content Include="gif\ng.gif" />
+    <Content Include="gif\ni.gif" />
+    <Content Include="gif\nl.gif" />
+    <Content Include="gif\no.gif" />
+    <Content Include="gif\np.gif" />
+    <Content Include="gif\nr.gif" />
+    <Content Include="gif\nu.gif" />
+    <Content Include="gif\nz.gif" />
+    <Content Include="gif\om.gif" />
+    <Content Include="gif\pa.gif" />
+    <Content Include="gif\pe.gif" />
+    <Content Include="gif\pf.gif" />
+    <Content Include="gif\pg.gif" />
+    <Content Include="gif\ph.gif" />
+    <Content Include="gif\pk.gif" />
+    <Content Include="gif\pl.gif" />
+    <Content Include="gif\pm.gif" />
+    <Content Include="gif\pn.gif" />
+    <Content Include="gif\pr.gif" />
+    <Content Include="gif\ps.gif" />
+    <Content Include="gif\pt.gif" />
+    <Content Include="gif\pw.gif" />
+    <Content Include="gif\py.gif" />
+    <Content Include="gif\qa.gif" />
+    <Content Include="gif\re.gif" />
+    <Content Include="gif\ro.gif" />
+    <Content Include="gif\rs.gif" />
+    <Content Include="gif\ru.gif" />
+    <Content Include="gif\rw.gif" />
+    <Content Include="gif\sa.gif" />
+    <Content Include="gif\sb.gif" />
+    <Content Include="gif\sc.gif" />
+    <Content Include="gif\scotland.gif" />
+    <Content Include="gif\sd.gif" />
+    <Content Include="gif\se.gif" />
+    <Content Include="gif\sg.gif" />
+    <Content Include="gif\sh.gif" />
+    <Content Include="gif\si.gif" />
+    <Content Include="gif\sj.gif" />
+    <Content Include="gif\sk.gif" />
+    <Content Include="gif\sl.gif" />
+    <Content Include="gif\sm.gif" />
+    <Content Include="gif\sn.gif" />
+    <Content Include="gif\so.gif" />
+    <Content Include="gif\sr.gif" />
+    <Content Include="gif\st.gif" />
+    <Content Include="gif\sv.gif" />
+    <Content Include="gif\sy.gif" />
+    <Content Include="gif\sz.gif" />
+    <Content Include="gif\tc.gif" />
+    <Content Include="gif\td.gif" />
+    <Content Include="gif\tf.gif" />
+    <Content Include="gif\tg.gif" />
+    <Content Include="gif\th.gif" />
+    <Content Include="gif\tj.gif" />
+    <Content Include="gif\tk.gif" />
+    <Content Include="gif\tl.gif" />
+    <Content Include="gif\tm.gif" />
+    <Content Include="gif\tn.gif" />
+    <Content Include="gif\to.gif" />
+    <Content Include="gif\tr.gif" />
+    <Content Include="gif\tt.gif" />
+    <Content Include="gif\tv.gif" />
+    <Content Include="gif\tw.gif" />
+    <Content Include="gif\tz.gif" />
+    <Content Include="gif\ua.gif" />
+    <Content Include="gif\ug.gif" />
+    <Content Include="gif\um.gif" />
+    <Content Include="gif\us.gif" />
+    <Content Include="gif\uy.gif" />
+    <Content Include="gif\uz.gif" />
+    <Content Include="gif\va.gif" />
+    <Content Include="gif\vc.gif" />
+    <Content Include="gif\ve.gif" />
+    <Content Include="gif\vg.gif" />
+    <Content Include="gif\vi.gif" />
+    <Content Include="gif\vn.gif" />
+    <Content Include="gif\vu.gif" />
+    <Content Include="gif\wales.gif" />
+    <Content Include="gif\wf.gif" />
+    <Content Include="gif\ws.gif" />
+    <Content Include="gif\ye.gif" />
+    <Content Include="gif\yt.gif" />
+    <Content Include="gif\za.gif" />
+    <Content Include="gif\zm.gif" />
+    <Content Include="gif\zw.gif" />
+    <Content Include="images\headerter.png" />
+    <Content Include="images\headerbis.png" />
+    <Content Include="insererDates.aspx" />
+    <Content Include="App_Data\HRdb.mdf" />
+    <Content Include="App_Data\HRdb_log.ldf">
+      <DependentUpon>HRdb.mdf</DependentUpon>
+    </Content>
+    <Content Include="default2.aspx" />
+    <Content Include="images\anim.jpg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\button-bg.jpg" />
+    <Content Include="images\fd_menu.gif" />
+    <Content Include="images\fd_page.gif" />
+    <Content Include="images\fd_page2.gif" />
+    <Content Include="images\footer.jpg" />
+    <Content Include="images\header.png" />
+    <Content Include="images\photos_chambres.jpg" />
+    <Content Include="images\plan.jpg" />
+    <Content Include="inter.aspx" />
+    <Content Include="intermed.aspx" />
+    <Content Include="jardins.aspx" />
+    <Content Include="jQueryDropDownListWithImages.aspx" />
+    <Content Include="Liste.aspx" />
+    <Content Include="LoginCustomer.aspx" />
+    <Content Include="Loginpwd.aspx" />
+    <Content Include="Monuments.aspx" />
+    <Content Include="Musees.aspx" />
+    <Content Include="parcsaffaires.aspx" />
+    <Content Include="parteners.aspx" />
+    <Content Include="ResaManagement.aspx" />
+    <Content Include="resaslist.aspx" />
+    <Content Include="Salles.aspx" />
+    <Content Include="Scripts\AC_RunActiveContent.js" />
+    <Content Include="contact.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="stades.aspx" />
+    <Content Include="Styles\dd.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="viewresas.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <None Include=".DS_Store" />
+    <Content Include="Webold.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Webold.Debug.config">
+      <DependentUpon>Webold.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Webold.Release.config">
+      <DependentUpon>Webold.config</DependentUpon>
+    </Content>
+    <Content Include="BlogMasterPage.master" />
+    <None Include="Service References\interfax\dfs.disco" />
+    <None Include="Service References\interfax\configuration91.svcinfo" />
+    <None Include="Service References\interfax\configuration.svcinfo" />
+    <None Include="Service References\interfax\hotelrichardweb.interfax.FaxItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\interfax\hotelrichardweb.interfax.FaxItemEx.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\interfax\hotelrichardweb.interfax.FaxQueryResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\interfax\hotelrichardweb.interfax.ListPPResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\interfax\hotelrichardweb.interfax.PPCardResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\interfax\hotelrichardweb.interfax.PPCardTransactions.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\interfax\hotelrichardweb.interfax.PPCardTrasnactionsByteArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\interfax\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\jquery-1.4.2.min.js" />
+    <Content Include="Scripts\jquery.effects.blind.js" />
+    <Content Include="Scripts\jquery.effects.core.js" />
+    <Content Include="site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Site.Master" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="tarif.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\interfax\dfs.wsdl" />
+    <Content Include="SiteGeneral.Master" />
+    <Content Include="SiteMenu.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="acces.aspx.cs">
+      <DependentUpon>insererDates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="acces.aspx.designer.cs">
+      <DependentUpon>insererDates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accesb.aspx.cs">
+      <DependentUpon>accesb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accesb.aspx.designer.cs">
+      <DependentUpon>accesb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ressources.en.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ressources.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="askPincode.aspx.cs">
+      <DependentUpon>askPincode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="askPincode.aspx.designer.cs">
+      <DependentUpon>askPincode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.aspx.cs">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePage.aspx.designer.cs">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BlogMasterPage.master.cs">
+      <DependentUpon>BlogMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BlogMasterPage.master.designer.cs">
+      <DependentUpon>BlogMasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="cancelOK.aspx.cs">
+      <DependentUpon>cancelOK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cancelOK.aspx.designer.cs">
+      <DependentUpon>cancelOK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chambres.aspx.cs">
+      <DependentUpon>chambres.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chambres.aspx.designer.cs">
+      <DependentUpon>chambres.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comments.aspx.cs">
+      <DependentUpon>comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comments.aspx.designer.cs">
+      <DependentUpon>comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="confirmcancel.aspx.cs">
+      <DependentUpon>confirmcancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="confirmcancel.aspx.designer.cs">
+      <DependentUpon>confirmcancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contactresa.aspx.cs">
+      <DependentUpon>contactresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contactresa.aspx.designer.cs">
+      <DependentUpon>contactresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="confirm.aspx.cs">
+      <DependentUpon>confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="confirm.aspx.designer.cs">
+      <DependentUpon>confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.aspx.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateUser.aspx.designer.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Culture.cs" />
+    <Compile Include="CustomSelect.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default2.aspx.cs">
+      <DependentUpon>default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default2.aspx.designer.cs">
+      <DependentUpon>default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detailsCB.aspx.cs">
+      <DependentUpon>detailsCB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detailsCB.aspx.designer.cs">
+      <DependentUpon>detailsCB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detailsperso.aspx.cs">
+      <DependentUpon>detailsperso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detailsperso.aspx.designer.cs">
+      <DependentUpon>detailsperso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dropdownpictures.ascx.cs">
+      <DependentUpon>dropdownpictures.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="dropdownpictures.ascx.designer.cs">
+      <DependentUpon>dropdownpictures.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="hrdataclasses.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hrdataclasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inter.aspx.cs">
+      <DependentUpon>inter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inter.aspx.designer.cs">
+      <DependentUpon>inter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="intermed.aspx.cs">
+      <DependentUpon>intermed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="intermed.aspx.designer.cs">
+      <DependentUpon>intermed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jardins.aspx.cs">
+      <DependentUpon>jardins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jardins.aspx.designer.cs">
+      <DependentUpon>jardins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Liste.aspx.cs">
+      <DependentUpon>Liste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Liste.aspx.designer.cs">
+      <DependentUpon>Liste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCustomer.aspx.cs">
+      <DependentUpon>LoginCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginCustomer.aspx.designer.cs">
+      <DependentUpon>LoginCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loginpwd.aspx.cs">
+      <DependentUpon>Loginpwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loginpwd.aspx.designer.cs">
+      <DependentUpon>Loginpwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monuments.aspx.cs">
+      <DependentUpon>Monuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monuments.aspx.designer.cs">
+      <DependentUpon>Monuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Musees.aspx.cs">
+      <DependentUpon>Musees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Musees.aspx.designer.cs">
+      <DependentUpon>Musees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parcsaffaires.aspx.cs">
+      <DependentUpon>parcsaffaires.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="parcsaffaires.aspx.designer.cs">
+      <DependentUpon>parcsaffaires.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parteners.aspx.cs">
+      <DependentUpon>parteners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="parteners.aspx.designer.cs">
+      <DependentUpon>parteners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResaManagement.aspx.cs">
+      <DependentUpon>ResaManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResaManagement.aspx.designer.cs">
+      <DependentUpon>ResaManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="resaslist.aspx.cs">
+      <DependentUpon>resaslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resaslist.aspx.designer.cs">
+      <DependentUpon>resaslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salles.aspx.cs">
+      <DependentUpon>Salles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salles.aspx.designer.cs">
+      <DependentUpon>Salles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecureWebPageDirectory.cs" />
+    <Compile Include="Service References\interfax\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteGeneral.Master.cs">
+      <DependentUpon>SiteGeneral.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteGeneral.Master.designer.cs">
+      <DependentUpon>SiteGeneral.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMenu.master.cs">
+      <DependentUpon>SiteMenu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMenu.master.designer.cs">
+      <DependentUpon>SiteMenu.master</DependentUpon>
+    </Compile>
+    <Compile Include="stades.aspx.cs">
+      <DependentUpon>stades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stades.aspx.designer.cs">
+      <DependentUpon>stades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tarif.aspx.cs">
+      <DependentUpon>tarif.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tarif.aspx.designer.cs">
+      <DependentUpon>tarif.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewresas.aspx.cs">
+      <DependentUpon>viewresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewresas.aspx.designer.cs">
+      <DependentUpon>viewresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebCustomControl1.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="hrdataclasses.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>hrdataclasses.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hrdataclasses.dbml.layout">
+      <DependentUpon>hrdataclasses.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\interfax\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SendCharFax\SendCharFax.csproj">
+      <Project>{674736C9-F057-4501-AA0A-478F61B7E664}</Project>
+      <Name>SendCharFax</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ressources.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ressources.en.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Resource.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.pl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.pt.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.ro.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.ro.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.pt.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.pl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.pl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.pt.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.ro.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.ro.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.pt.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.pl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contact.aspx.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contact.aspx.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contact.aspx.ro.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contact.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contact.aspx.pt.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contact.aspx.pl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contact.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contact.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.pl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.pt.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.ro.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.ar.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.ar.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.pl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.pt.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.ro.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.pl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.pt.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.en.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.pt.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.pl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.ro.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.ar.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.ar.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contact.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.he.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.he.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.he.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.he.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.he.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.nl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.nl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.nl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.nl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.in.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.zh-CHS.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\tarif.aspx.cs.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.nl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.zh-CHS.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.tr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.cs.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.tr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.zh-CHS.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.cs.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\index.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.cs.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.zh-CHS.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.ar.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.ro.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.tr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\detailsperso.aspx.nl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.tr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.zh-CHS.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.he.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.cs.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\contactresa.aspx.ar.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.he.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.zh-CHS.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.cs.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.nl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\chambres.aspx.tr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.ar.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.tr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.zh-CHS.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\accesb.aspx.cs.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.cs.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.nl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.he.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.ar.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.zh-CHS.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\parteners.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\SiteGeneral.Master.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\SiteGeneral.Master.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="imagesevents\" />
+    <Folder Include="imagessites\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49436</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

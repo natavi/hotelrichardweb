@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SiteMenu.master.cs" Inherits="hotelrichardweb.SiteMenu" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <table class="style30" style="width: 1000px">
+        <tr>
+            <td style="width: 600px">
+                <asp:ContentPlaceHolder  ID="MainContent" runat="server"/>
+               </td>
+        
+             <td>
+             <table class="style30" style="width: 300px">
+                 <tr>
+                 <td class="style16">
+                     <asp:HyperLink ID="HyperLink3" runat="server">Monuments et attractions</asp:HyperLink>
+                     </td>
+                 </tr>
+                 <tr>
+                 <td class="style16">
+                     <asp:HyperLink ID="HyperLink4" runat="server">Salles de spectacles et de concerts</asp:HyperLink>
+                     </td>
+                 </tr>
+
+                 <tr>
+                 <td class="style16">
+                     <asp:HyperLink ID="HyperLink5" runat="server">Musées</asp:HyperLink>
+                     </td>
+                 </tr>
+                 <tr>
+                 <td class="style16">
+                     <asp:HyperLink ID="HyperLink6" runat="server">Stades</asp:HyperLink>
+                     </td>
+                 </tr>
+                 <tr>
+                 <td class="style16">
+                     <asp:HyperLink ID="HyperLink7" runat="server">Parcs d&#39;affaires</asp:HyperLink>
+                     </td>
+                 </tr>
+                 <tr>
+                 <td class="style16">
+                     <asp:HyperLink ID="HyperLink8" runat="server">Nature</asp:HyperLink>
+                     </td>
+                 </tr>
+
+                 </table>
+                 </td>
+        </tr>
+    </table>
+</asp:Content>
