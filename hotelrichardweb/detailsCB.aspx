@@ -73,7 +73,7 @@
                 
                   </table>
 
-      <asp:SqlDataSource ID="insertdatasource" runat="server"
+   <asp:SqlDataSource ID="insertdatasource" runat="server"
           InsertCommand="INSERT INTO Reservations (Nom, Prenom,Adresse, telephone, datedebut, duree, typechambre, prix) VALUES (@nom,@prenom,@adresse,@telephone,@datedebut,@duree,@typechambre,@prix); SELECT SCOPE_IDENTITY() AS EXPR2"
           Selectcommand="SELECT SCOPE_IDENTITY() AS EXPR">
     </asp:SqlDataSource>
@@ -87,5 +87,4 @@
   </tr>
  </table>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContactAcces" runat="server">
-</asp:Content>
+

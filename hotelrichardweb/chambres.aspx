@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="chambres.aspx.cs" Inherits="hotelrichardweb.chambres" %>
+﻿<%@ Page Title="Chambre d'hôtel pas chère à Paris, hôtel bon marché à Paris : Hôtel Richard, hôtel à bas prix à Paris" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="chambres.aspx.cs" Inherits="hotelrichardweb.chambres" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <table width="950" border="0" cellspacing="0" cellpadding="15">
 <tr>

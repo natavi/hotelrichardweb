@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="hotelrichardweb.index"%>
+﻿<%@ Page Title="Hôtel économique à Paris, hôtel pour étudiant : Hôtel Richard, hôtel à Paris dans le 11ème arrondissement" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="hotelrichardweb.index"%>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">

@@ -63,6 +63,7 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddSITE.aspx" />
     <Content Include="About.aspx" />
     <Content Include="acces.aspx" />
     <Content Include="accesb.aspx" />
@@ -438,6 +439,13 @@
     <Content Include="SiteMenu.master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddSITE.aspx.cs">
+      <DependentUpon>AddSITE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSITE.aspx.designer.cs">
+      <DependentUpon>AddSITE.aspx</DependentUpon>
+    </Compile>
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1219,6 +1227,7 @@
   <ItemGroup>
     <Folder Include="imagesevents\" />
     <Folder Include="imagessites\" />
+    <Folder Include="TEST\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

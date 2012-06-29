@@ -26,12 +26,12 @@
                     </tr>
                     <tr>
                         <td style="height: 19px; width: 407px">
-                            <asp:HyperLink ID="HyperLink7" runat="server">Les restaurants</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink7" runat="server">Les salons</asp:HyperLink>
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 407px">
-                            <asp:HyperLink ID="HyperLink8" runat="server">Les boites de nuit et discos</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink8" runat="server">Les boites de nuit et discotheques</asp:HyperLink>
                         </td>
                     </tr>
                     <tr>
@@ -41,7 +41,7 @@
                     </tr>
                     <tr>
                         <td style="width: 407px">
-                            <asp:HyperLink ID="HyperLink10" runat="server">Les salons</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink10" runat="server">Les restaurants</asp:HyperLink>
                         </td>
                     </tr>
                     <tr>
