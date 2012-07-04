@@ -334,6 +334,12 @@
     <Content Include="gif\zw.gif" />
     <Content Include="images\headerter.png" />
     <Content Include="images\headerbis.png" />
+    <Content Include="images\img1.JPG" />
+    <Content Include="images\img2.JPG" />
+    <Content Include="images\img3.JPG" />
+    <Content Include="img1.JPG" />
+    <Content Include="img2.JPG" />
+    <Content Include="img3.JPG" />
     <Content Include="insererDates.aspx" />
     <Content Include="App_Data\HRdb.mdf" />
     <Content Include="App_Data\HRdb_log.ldf">
@@ -421,7 +427,6 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Site.Master" />
     <Content Include="Styles\Site.css" />
     <Content Include="tarif.aspx" />
     <Content Include="Web.config">
@@ -437,6 +442,7 @@
     <None Include="Service References\interfax\dfs.wsdl" />
     <Content Include="SiteGeneral.Master" />
     <Content Include="SiteMenu.master" />
+    <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddSITE.aspx.cs">
@@ -724,11 +730,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="SiteGeneral.Master.cs">
       <DependentUpon>SiteGeneral.Master</DependentUpon>

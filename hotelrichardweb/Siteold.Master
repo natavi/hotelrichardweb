@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs"  Inherits="hotelrichardweb.SiteMaster"  %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Siteold.Master.cs"  Inherits="hotelrichardweb.SiteMaster"  %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -6,6 +6,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link href="site.css" rel="stylesheet" type="text/css" />
+    
+  
+    <style type="text/css">
+        
+    </style>
+    
+  
     </head>
 <body class="fond">
 <form runat="server">
@@ -58,39 +65,34 @@
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.effects.core.js"></script>
 <script type="text/javascript" src="js/jquery.effects.blind.js"></script>
-
-
-
- <link href="Styles/style.css" rel="Stylesheet" type="text/css" />      
-
-
-
-
-
+<link href="Styles/style.css" rel="Stylesheet" type="text/css" />
 
 <table border="0" align="center" cellpadding="0" cellspacing="0" 
-        style="width: 1201px; margin-right: 11px;" height:>
-  <tr>
-    <td class="style14">
-    <table>
+        style="width: 1294px; margin-right: 11px; height: 668px;">
      <tr>
-        <td class="style4">
-            <table class="style19">
-                <tr>
-                    <td class="style20">
-                        &nbsp;<table class="style30">
-                            <tr>
-                                <td>
-                        <img src="images/header.png" alt="Hotel Richard" height="76" 
-            style="width: 797px" /></td>
-                            </tr>
-                            <tr>
-                                <td>
-      <table>
+             <td class="style38">
+                <table style="height: 300px; width: 1264px; margin-bottom: 0px;">
+                     <tr>
+                          <td class="style37">
+                              <table class="style19">
+                                    <tr>
+                                       <td class="style35">
+                                      &nbsp;<table class="style30">
+                                                 <tr>
+                                                    <td class="style36">
+                                                       <h1>
+                               <img src="images/header.png" alt="Hotel Richard" height="76" 
+                                style="width: 835px" />
+                                     </h1>
+                             </td>
+                       </tr>
+                       <tr>
+                            <td class="style33">
+                             <table>
          
-      <tr>
+                        <tr>
               <td class="style16"><div id="Div1">
-        <asp:HyperLink ID="HL1" runat="server" Text="ACCUEIL" ForeColor="White" Font-Overline="false" NavigateUrl="/index.aspx"></asp:HyperLink>  
+        <asp:HyperLink ID="HL1" runat="server" Text="ACCUEIL" ForeColor="White" Font-Overline="false" NavigateUrl="~/"></asp:HyperLink>  
         </div>
             </td>
             <td class="style16"><div id="Div2">
@@ -109,7 +111,7 @@
         <asp:HyperLink ID="HLRESA" runat="server" Text="RESERVATION" ForeColor="White" Font-Overline="false" NavigateUrl="~/contactresa.aspx"></asp:HyperLink> 
         </div>
         </td>
-        <td class="style16"><div id="Div6">
+        <td class="style23"><div id="Div6">
         <asp:HyperLink ID="HLCOMMENTS" runat="server" Text="BLOG" ForeColor="White" Font-Overline="false" NavigateUrl="~/blog.aspx"></asp:HyperLink> 
            </div>
             </td>
@@ -120,9 +122,9 @@
      
                                 </td>
                             </tr>
-                        </table>
+               </table>
                     </td>
-                    <td align="left" class="style29"> 
+                    <td align="left" class="style31"> 
                         <table class="style22">
                             <tr>
                               <td class="style16">
@@ -141,42 +143,34 @@
                             </tr>
                             <tr>
                                 <td class="style26">
-                                 <meta name="description" content="This is a short summary of the page." />
+                                
 
                                  <a name="fb_share" type="button" href="http://www.facebook.com/sharer.php">Share</a>
-                                 <link rel="image_src" href="~/images/header.png"/>
+                                 
                                   </td>
                             </tr>
              
                         </table>
                         </td>
                  </tr>
-                </table>
-         </td>
-        
-     
-     </tr>
-     
-    
-  
-    <tr>
-    <td align="center" class="style27">
+               </table>
+                         </td>
+                      </tr>
+                      </table>
+                      </td>
+                      </tr>
+                 <tr>
+    <td align="center" class="style39">
      
             <div class="main">
             <asp:ContentPlaceHolder  ID="MainContent" runat="server"/>
             </div>
                    </td>
-            
-     
-
-        
- 
-  </tr>
-  
-  <tr>
-            <td class="style27" align="center"><img src="images/footer.jpg" alt="Hotel Richard"/></td>
+         </tr>
+      <tr>
+            <td class="style27" align="center"><img src="images/footer.jpg" alt="Hotel Richard"/> </td>
         </tr>
-</table>
+   </table>
 <div id="footer">
     <div id="mentions">Copyright &copy; 2011 H&ocirc;tel Richard - Tous droits r&eacute;serv&eacute;s - <a href="mentions_legales.aspx" class="footer">Mentions L&eacute;gales</a> - <a href="http://www.webadium.com" target="_blank" class="footer">Cr&eacute;ation de site internet</a> : <a href="http://www.webadium.com" target="_blank" class="footer">Webadium</a></div>
     </div>

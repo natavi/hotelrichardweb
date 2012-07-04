@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using System;
+using System.Configuration;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +13,10 @@ namespace hotelrichardweb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            availdatasource.ConnectionString = ConfigurationManager.ConnectionStrings["ApplicationServices"].ConnectionString;
+            availdatasource.Select(new DataSourceSelectArguments());
+            availdatasource.SelectParameters["typem"].DefaultValue = "stade";
+            Datarepeat.DataBind();
         }
     }
 }

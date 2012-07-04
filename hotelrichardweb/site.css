@@ -55,6 +55,7 @@ body,td,th {
 	padding:5px 0 5px 0;
 	margin-left:auto;
 	margin-right:auto;
+    height: 17px;
 }
 
 a.footer {
@@ -74,4 +75,5 @@ text-decoration:underline
 	margin-right:auto;
 	text-align:center;
 	font-size:11px;
+    height: 23px;
 }
