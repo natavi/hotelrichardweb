@@ -60,7 +60,7 @@ namespace hotelrichardweb
         {
             if (Request.IsSecureConnection)
             {
-                Literal9.Text = "secure";
+                //Literal9.Text = "secure";
                 Response.Redirect(Request.Url.AbsoluteUri.Replace("https://", "http://"));
             }
 

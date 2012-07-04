@@ -31,21 +31,52 @@
            
             
         </tr>
+        
+        
+
         <tr>
-            <td style="width: 564px; height: 110px;">
-                <asp:Label ID="Label4" runat="server" Text="Localisation" CssClass="style16"></asp:Label>
+            <td style="width: 564px">
+                &nbsp;</td>
+            <td>
+                
+                <asp:FileUpload ID="FileUpload1" runat="server" />
+                
             </td>
-            <td style="height: 110px">
-                 <asp:TextBox ID="TextBox1" runat="server" Height="91px" Rows="10" Width="161px"></asp:TextBox>
-            </td>     
+           
+            
         </tr>
+         <tr>
+            <td style="width: 564px">
+                &nbsp;</td>
+            <td>
+                
+                <asp:TextBox ID="Locaalis" runat="server" Height="91px" Rows="10" Width="161px"></asp:TextBox>
+                
+            </td>
+           
+            
+        </tr>
+         <tr>
+            <td style="width: 564px">
+                &nbsp;</td>
+            <td>
+                
+                <asp:TextBox ID="Temps" runat="server" Height="91px" Rows="10" Width="161px"></asp:TextBox>
+                
+            </td>
+           
+            
+        </tr>
+        
+        
+
         <tr>
             <td style="width: 564px">
                 &nbsp;</td>
             <td>
                 
                 <asp:Button ID="Button1" runat="server" Text="Button" onclick="Button1_Click" 
-                    style="height: 26px" Width="89px" />
+                    Width="142px" />
                 
             </td>
            
@@ -54,12 +85,14 @@
     </table>
     
     <asp:SqlDataSource ID="cdatasource" runat="server"
-          InsertCommand="INSERT INTO Sites VALUES (@nom,@description,@type);" 
+          InsertCommand="INSERT INTO Sites VALUES (@nom,@description,@type,@localisation,@temps);" 
     >
     <InsertParameters>
         <asp:Parameter name="nom" Type="String"/>
         <asp:Parameter Name="description" Type="String"/>
         <asp:Parameter Name="type" Type="String"/>
+        <asp:Parameter Name="localisation" Type="String"/>
+        <asp:Parameter Name="temps" Type="String"/>
     </InsertParameters>
     
     </asp:SqlDataSource>

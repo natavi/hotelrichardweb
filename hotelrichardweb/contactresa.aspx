@@ -2,9 +2,9 @@
 " Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="contactresa.aspx.cs" Inherits="hotelrichardweb.contactresa" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-<table width="950" border="0" cellspacing="0" cellpadding="15">
+<table width="950" bgcolor="#313b44" border="0" cellspacing="0" cellpadding="15">
 <tr>
-<td bgcolor="#313b44"><div class="main">
+<td colspan="2">
     <span class="txtorange2">Nous contacter</span><br />
 <br />
               <div align="center"><strong>HOTEL RICHARD</strong><br />
@@ -12,84 +12,56 @@
                 75011 Paris, FRANCE<br /><br />
               <span class="txtorange1">+33 (0)1 43 79 39 98</span></div>
 <br/>
+</td>
+</tr>
 
-<span class="txtorange2"><asp:Literal ID="Literal9" runat="server" Text="demande de reservation" /></span><br />
+<tr>
+<td bgcolor="#313b44" colspan="2">
+<h1 class="txtorange2">demande de reservation</h1><br />
 <br />
+ </td>
+ </tr>    
+          
+ <tr valign="middle"> 
 
-                
-                <table align="center" cellpadding=0 cellspacing=3 class="style4" 
-                    style="width: 546px">
-
-
-                  <tr valign="middle"> 
-                    <td height="40" colspan="2" valign="middle" class="style4"><h4 class="style5"/></td>
-                  </tr>
-
-
-                  <tr valign="middle"> 
-
-                    <td class="style4"></td>
-
-                    <td  align="center" class="style4">                    &nbsp;</td>
-                  </tr>
-
-                  <tr valign="middle"> 
-
-                    <td class="style14"><asp:Literal ID="Literal3" runat="server" Text="date" /></td>
+                    <td align="center"><h2 class="style22" >date </h2></td>
                     
-                    <td  align="center"> 
+                    <td  align="left" class="style22" > 
 
                         <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
                       </td>
                      
                   </tr>
 
-                  <tr valign="middle">
-                    <td class="style14"><asp:Literal ID="Literal2" runat="server" Text="nombre de nuits" /></td>
-                    <td  align="left"><div align="right">
+ <tr valign="middle">
+                    <td align="center" valign="top"><h2 class="style22">nombre de nuits</h2></td>
+                    <td  align="left" class="style22" valign="top">
                         <br />
-                        <asp:TextBox ID="TextBox1" runat="server" style="margin-left: 0px" 
-                            Width="40px"></asp:TextBox>
-                        &nbsp;</div>
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        &nbsp;
                         <asp:RequiredFieldValidator ID="rqv" runat="server" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
                          <asp:CustomValidator id="rqtel" runat="server" OnServerValidate="NbValidate" ControlToValidate="TextBox1" 
                         ErrorMessage="invalid number of nights" EnableViewState="true">
                         </asp:CustomValidator>
                         </td>
-                  </tr>
-                  <tr valign="middle">
-                    <td class="style14" valign="top"><asp:Literal ID="Literal1" runat="server"  Text="type d'habitation" /></td>
+      </tr>
+       <tr valign="middle">
+                    <td align="center" valign="top"><h2 class="style22">type d'habitation</h2></td>
                     
-                    <td  align="right" valign="top">&nbsp;<asp:DropDownList ID="DropDownList5" 
-                            runat="server">
-                        </asp:DropDownList>
+                    <td  align="left" class="style22" valign="top"><asp:DropDownList ID="DropDownList5" 
+                            runat="server">  </asp:DropDownList>
                       </td>
-                      </div>
-                  </tr>
-                </table>
-
-
-                <table width="400" align="center" cellpadding=0 cellspacing=3>
+                      
+         </tr>
                 
+   <tr>
 
-                  <tr>
-                    <td align="center"><label>
-                      &nbsp;</label></td>
-                  </tr>
-                  <tr>
-                    <td align="center">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td align="center" class="style14" >&nbsp;<asp:Button ID="Button1" runat="server"  Text="Reserver" 
+                    <td align="center" colspan="2" class="style14" >&nbsp;<asp:Button ID="Button1" runat="server"  Text="Reserver" 
                             Width="208px" onclick="Button1_Click" />
                       </td>
-                  </tr>
-                </table>
-<br>
-</div>
-</td>
-  </tr>
- </table>
+                </tr>
+         
+ </table>   
 
 </asp:Content>
 
