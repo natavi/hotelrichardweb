@@ -11,7 +11,7 @@ using System.Configuration;
 
 namespace hotelrichardweb
 {
-    public partial class blog : BasePage
+    public partial class blog : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

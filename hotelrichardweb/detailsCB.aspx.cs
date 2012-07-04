@@ -108,6 +108,9 @@ namespace hotelrichardweb
                 cdim.ExecuteNonQuery();
                 cdim.Connection.Close();
 
+
+
+
                 // System.Data.DataView dv = (System.Data.DataView)insertdatasource.Select(new DataSourceSelectArguments());
                 // int id = (int)dv.Table.Rows[0][0];
                 string username = "Benchimol";

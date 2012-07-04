@@ -20,59 +20,11 @@
 <li><h2 class="style17">Boissons gratuites le matin (chocolat, thé ou café)</h2></li>
 
 <br />
-</td>
-</tr>
-<tr>
-   <td bgcolor="#313b44" align="left">
-    <table  cellspacing= "10px">
-        <tr>
-            <td valign="top" style="width: 422px">
-                 <table>
-                 <tr >
-                 <td align="center">
-                 <img id="Img1" src="~/images/img1.JPG" runat="server" 
-                    style="height: 238px; width: 403px" 
-                         title="chambre double avec salle de bains à l'intérieur"></img>
-                </td>
-                 </tr>
-                
-                <tr>
-                <td  align="center"> <h2 class="style22">chambre double avec salle de bains à l'intérieur</h2> </td>
-                </tr>
-                </table>
-             </td>
-              <td  valign="top">
-                 <table>
-                 <tr>
-                 <td align="center" >
-                <img id="Img2" src="~/images/img2.JPG" runat="server" 
-                    style="height: 237px; width: 403px" 
-                         title="chambre double avec salle de bains sur palier"></img>
-                 </td>
-                </tr>
-                <tr>
-                <td  align="center"> <h2 class="style22">chambre double avec salle de bains sur palier </h2></td>
-                </tr>
-                </table>
-              <td valign="top" style="width: 435px">
-                <table>
-                 <tr>
-                 <td align="center" >
-                <img id="Img3" src="~/images/img3.JPG" valign="top" runat="server" 
-                         style="height: 241px; width: 392px" title="chambre simple"></img>
-                </td>
-                </tr>
-                <tr>
-                <td align="center">  <h2 class="style22" >chambre simple </h2> </td>
-                </tr>
-                </table>
-        
-        </tr>
-        
-    </table>
+
+  <img src="images/photos_chambres.jpg" alt="nos chambres" width="690" height="530" />
+    
     </td>
     </tr>
-    </table>
-
+ </table>
     </asp:Content>
 

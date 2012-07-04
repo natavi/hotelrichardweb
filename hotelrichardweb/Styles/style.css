@@ -48,12 +48,23 @@ body
     }
     .style16
     {
-        height: 100px;
-        width: 700px;
+        height: 23px;
+        width: 908px;
         font-family:Batang;
-        font-weight:bold; 
+        font-weight:normal; 
         font-size:medium;
         color:White;
+        
+    }
+    .style17
+    {
+        height: 30px;
+        width: 1052px;
+        font-family:Batang;
+        font-weight:normal; 
+        font-size:medium;
+        color:White;
+        width: 1317px;
         
     }
       
@@ -72,16 +83,7 @@ body
     {
         width: 786px;
     }
-      
-      
-       style17
-    {
-        height: 100px;
-        width: 701px;
-        font-family: Batang;
-        font-weight: bold;
-        font-size: larger;
-    }  
+        
       
     .style22
     {
@@ -102,25 +104,9 @@ body
         font-size: medium;
         color: White;
     }
-    styleimage
-    {
-        height: 300px;
-        width: 300px;
-       
-    }
     .style26
     {
         width: 140px;
-    }
-    
-     .stylemenu
-    {
-        height: 100px;
-        width: 700px;
-        font-family:Batang;
-        font-weight:normal; 
-        font-size:medium;
-        color:White;
     }
     
       

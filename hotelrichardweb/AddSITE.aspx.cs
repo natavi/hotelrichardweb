@@ -27,31 +27,12 @@ namespace hotelrichardweb
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
-            if (FileUpload1.HasFile)
-                try
-                {
-                    FileUpload1.SaveAs(Server.MapPath("/")+"/imagessites/" + FileUpload1.FileName);
-                    Label1.Text = "File name: " +
-                         FileUpload1.PostedFile.FileName + "<br>" +
-                         FileUpload1.PostedFile.ContentLength + " kb<br>" +
-                         "Content type: " +
-                         FileUpload1.PostedFile.ContentType;
-                }
-                catch (Exception ex)
-                {
-                    Label1.Text = "ERROR: " + ex.Message.ToString();
-                }
-
-            
             SqlCommand c = new SqlCommand();
-            c.CommandText = "INSERT INTO Sites (Name, Description, path, type, Localisation, Temps) VALUES (@Name,@Description,@path,@type,@Localisation,@Temps); SELECT SCOPE_IDENTITY() AS EXPR2";
-            c.Parameters.AddWithValue("@Name", TextBox2.Text);
-            c.Parameters.AddWithValue("@Description", TextBox3.Text);
-            c.Parameters.AddWithValue("@path", "~/imagessites/"+FileUpload1.FileName);
+            c.CommandText = "INSERT INTO Sites VALUES (@nom,@description,@type,@localisation)";
+            c.Parameters.AddWithValue("@nom", TextBox2.Text);
+            c.Parameters.AddWithValue("@description", TextBox3.Text);
             c.Parameters.AddWithValue("@type", DropDownList1.Text);
-            c.Parameters.AddWithValue("@Localisation", Locaalis.Text);
-            c.Parameters.AddWithValue("@Temps", Temps.Text);
+            c.Parameters.AddWithValue("@localisation", TextBox1.Text);
             c.Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ApplicationServices"].ConnectionString);
             c.Connection.Open();
             int increm = Convert.ToInt32(c.ExecuteScalar());

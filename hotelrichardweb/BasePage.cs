@@ -46,7 +46,7 @@ namespace hotelrichardweb
             {
                 Exception ex = Server.GetLastError();
                 Session["LastError"] = ex;
-                Response.Redirect("~/error.aspx?"+ex.Message);
+                Response.Redirect("~/error.aspx");
             }
         }
 

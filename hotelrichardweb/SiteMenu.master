@@ -2,14 +2,13 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <table class="style30" style="width: 1000px">
-        <tr >
-            <td  style="width: 2955px" class="style20">
+        <tr>
+            <td style="width: 600px">
                 <asp:ContentPlaceHolder  ID="MainContent" runat="server"/>
                </td>
         
-             <td style="width: 531px">
-             <table class="style30" 
-                     style="width: 248px; margin-left: 10px; margin-right: 10px;">
+             <td>
+             <table class="style30" style="width: 300px">
                  <tr>
                  <td class="style16">
                      <asp:HyperLink ID="HyperLink3" runat="server">Monuments et attractions</asp:HyperLink>
