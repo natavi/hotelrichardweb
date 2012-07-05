@@ -14,14 +14,16 @@ namespace hotelrichardweb
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-            DropDownList1.Items.Add("monument ou lieux à d'interet");
-            DropDownList1.Items.Add("musée");
-            DropDownList1.Items.Add("salle de spectacle");
-            DropDownList1.Items.Add("salle de concert");
-            DropDownList1.Items.Add("restaurant");
-            DropDownList1.Items.Add("stade");
-            DropDownList1.Items.Add("parc d'expositions");
-            DropDownList1.Items.Add("jardin et bois");
+            if (!IsPostBack)
+            {
+                DropDownList1.Items.Add("monument");
+                DropDownList1.Items.Add("musée");
+                DropDownList1.Items.Add("salle de spectacle ou de concert");
+                DropDownList1.Items.Add("restaurant");
+                DropDownList1.Items.Add("stade");
+                DropDownList1.Items.Add("parc d'expositions");
+                DropDownList1.Items.Add("jardin et bois");
+            }
             
 		}
 

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="~/AddSITE.aspx.cs" Inherits="hotelrichardweb.AddSite" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Debug="true"  ValidateRequest="false" CodeBehind="~/AddSITE.aspx.cs" Inherits="hotelrichardweb.AddSite" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <table style="width:100%;">
         <tr>
@@ -6,7 +6,7 @@
                 <asp:Label ID="Label2" runat="server" Text="Nom" CssClass="style16"></asp:Label>
             </td>
             <td style="height: 47px">
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Width="317px"></asp:TextBox>
             </td>
             
         </tr>
@@ -16,7 +16,7 @@
             </td>
             <td style="height: 77px">
                 <asp:TextBox ID="TextBox3" runat="server" Height="101px" Rows="10" 
-                    Width="164px"></asp:TextBox>
+                    Width="339px" TextMode="MultiLine"></asp:TextBox>
             </td>
           
         </tr>
@@ -25,7 +25,7 @@
                 <asp:Label ID="Label3" runat="server" Text="Type" CssClass="style16"></asp:Label>
             </td>
             <td style="height: 110px">
-                <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:DropDownList ID="DropDownList1" runat="server" Height="23px" Width="259px">
                 </asp:DropDownList>
             </td>
            
@@ -39,7 +39,8 @@
                 &nbsp;</td>
             <td>
                 
-                <asp:FileUpload ID="FileUpload1" runat="server" />
+                <asp:FileUpload ID="FileUpload1" runat="server" style="margin-left: 0px" 
+                    Width="285px" />
                 
             </td>
            
@@ -47,10 +48,12 @@
         </tr>
          <tr>
             <td style="width: 564px">
-                &nbsp;</td>
+                <asp:Label ID="Label4" runat="server" Text="Localisation" CssClass="style16"></asp:Label>
+             </td>
             <td>
                 
-                <asp:TextBox ID="Locaalis" runat="server" Height="91px" Rows="10" Width="161px"></asp:TextBox>
+                <asp:TextBox ID="Locaalis" runat="server" Height="91px" Rows="10" Width="339px" 
+                    Columns="50" TextMode="MultiLine"></asp:TextBox>
                 
             </td>
            
@@ -58,10 +61,12 @@
         </tr>
          <tr>
             <td style="width: 564px">
-                &nbsp;</td>
+                <asp:Label ID="Label5" runat="server" Text="Acces" CssClass="style16"></asp:Label>
+             </td>
             <td>
                 
-                <asp:TextBox ID="Temps" runat="server" Height="91px" Rows="10" Width="161px"></asp:TextBox>
+                <asp:TextBox ID="Temps" runat="server" Height="91px" Rows="10" Width="332px" 
+                    TextMode="MultiLine"></asp:TextBox>
                 
             </td>
            

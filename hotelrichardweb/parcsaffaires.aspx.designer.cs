@@ -10,24 +10,24 @@
 namespace hotelrichardweb {
     
     
-    public partial class jardins {
+    public partial class parcsaffaires {
         
         /// <summary>
-        /// Contrôle DataList1.
+        /// Contrôle Datagrid.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataList1;
+        protected global::System.Web.UI.WebControls.Repeater Datagrid;
         
         /// <summary>
-        /// Contrôle datasource.
+        /// Contrôle availdatasource.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource datasource;
+        protected global::System.Web.UI.WebControls.SqlDataSource availdatasource;
     }
 }

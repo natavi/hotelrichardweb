@@ -1,36 +1,74 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMenu.master" AutoEventWireup="true" CodeBehind="Monuments.aspx.cs" Inherits="hotelrichardweb.Monuments" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<asp:DataList ID="DataList1" runat="server" EnableViewState = "true" 
-        ViewStateMode="Enabled" DataSourceID="datasource"
-        RepeatDirection="Horizontal" ItemStyle-Width= "450px" ItemStyle-BorderWidth="4px" RepeatColumns="4" OnItemDataBound="changeColor">
+    
+    <table>
+    <asp:Repeater  ID="Datarepeat" runat="server" EnableViewState = "true" 
+        ViewStateMode="Enabled" DataSourceID="availdatasource">
+   
         <ItemTemplate>
-               <table>
-               <tr class="style14">
-                <asp:Label Id="labell" runat="server" EnableViewState="true" Text='<%#DataBinder.Eval(Container.DataItem,"Name","{0:dd.MM.yyyy}")%>'>
-     
+               
+               
+                <tr >
+                <td align="center" colspan="2" class="txtorange1">
+                <asp:Label Id="labell" runat="server" EnableViewState="true" Font-Size="X-Large" Text='<%#DataBinder.Eval(Container.DataItem,"Name")%>'>
                 </asp:Label>
+                </td>
                 </tr>
-                <tr class="style14">
-                <asp:Label ID="textboxp" runat="server" EnableViewState="true" Text='<%#DataBinder.Eval(Container.DataItem,"description")%>'>
+                <tr>
+                </tr>
+                <tr class="styleimage"> 
+                <td rowspan="5" >
+                <asp:Image ID="Image1"  runat="server"  ImageUrl= '<%#DataBinder.Eval(Container.DataItem,"path")%>' > </asp:Image> 
+                </td>
+               
+                <td align="left">
+                <asp:Label ID="textboxp" runat="server"  Font-Size="Medium"  EnableViewState="true" Text='<%#DataBinder.Eval(Container.DataItem,"Description")%>'>
                 </asp:Label>
+                </td>
                 </tr>
-                <tr class="style14">
-                <asp:Image ID="Label1" runat="server" EnableViewState="true" ImageUrl='<%#DataBinder.Eval(Container.DataItem,"path")%>'>
-                </asp:Image>
-                </tr>
-                </table>
-                </ItemTemplate>
-    
-    </asp:DataList>
-    
-    <asp:SqlDataSource ID="datasource" runat="server"
-          SelectCommand="SELECT Name, description, photo FROM Sites where typesite='Monuments'"  
-          >
-    <SelectParameters>
-        <asp:Parameter name="datedebut" Type="DateTime"/>
-        <asp:Parameter Name="datefin" Type="DateTime"/>
-    </SelectParameters>
 
+                <tr>
+                <td align="left">
+                <asp:Label ID="Label1" runat="server"  Font-Size="Medium" EnableViewState="true" Text='Acces depuis hotel Richard:'>
+                </asp:Label>
+                </td>
+                </tr>
+                
+                <tr>
+                <td align="left">
+                <asp:Label ID="Label2" runat="server"  Font-Size="Medium" EnableViewState="true" Text='<%#DataBinder.Eval(Container.DataItem,"Localisation")%>'>
+                </asp:Label>
+                </td>
+                </tr>
+                
+                <tr>
+                <td align="left">
+                <asp:Label ID="Label3" runat="server"  Font-Size="Medium" EnableViewState="true" Text='Temps de transport'>
+                </asp:Label>
+                </td>
+                </tr>
+                <tr>
+                <td align="left">
+                <asp:Label ID="Label7" runat="server"  Font-Size="Medium" EnableViewState="true" Text='<%#DataBinder.Eval(Container.DataItem,"Temps")%>'>
+                </asp:Label>
+                <asp:Label ID="Label4" runat="server"  Font-Size="Medium" EnableViewState="true" Text=" minutes">
+                </asp:Label>
+                </td>
+                </tr>
+                
+          </ItemTemplate>
+    
+    </asp:Repeater>
+    
+    </table>
+    
+    <asp:SqlDataSource ID="availdatasource" runat="server"
+          SelectCommand="SELECT Name, Description, path, Localisation, Temps FROM Sites where type like @typem"  
+          >
+          <SelectParameters>
+          <asp:Parameter name="typem" Type="String"/>
+          </SelectParameters>
     </asp:SqlDataSource>
 
 </asp:Content>
+

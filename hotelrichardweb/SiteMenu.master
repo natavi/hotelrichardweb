@@ -1,44 +1,73 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SiteMenu.master.cs" Inherits="hotelrichardweb.SiteMenu" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <table class="style30" style="width: 1000px">
-        <tr >
-            <td  style="width: 2955px" class="style20">
-                <asp:ContentPlaceHolder  ID="MainContent" runat="server"/>
-               </td>
-        
-             <td style="width: 531px">
+    <table class="style30" style="width: 1234px; height: 581px;">
+        <tr>
+            <td  bgcolor="#313b44" valign="top" style="width: 361px">
              <table class="style30" 
                      style="width: 248px; margin-left: 10px; margin-right: 10px;">
+                 
                  <tr>
+              
                  <td class="style16">
-                     <asp:HyperLink ID="HyperLink3" runat="server">Monuments et attractions</asp:HyperLink>
+                     <asp:HyperLink ID="HyperLink9" ForeColor= "OrangeRed" NavigateUrl="~/expos.aspx" runat="server">Expositions</asp:HyperLink>
                      </td>
                  </tr>
                  <tr>
                  <td class="style16">
-                     <asp:HyperLink ID="HyperLink4" runat="server">Salles de spectacles et de concerts</asp:HyperLink>
+                     <asp:HyperLink ID="HyperLink10"  ForeColor= "OrangeRed" NavigateUrl="~/concerts.aspx" runat="server">Concerts</asp:HyperLink>
+                     </td>
+                 </tr>
+                 <tr>
+                 <td class="style16">
+                     <asp:HyperLink ID="HyperLink11" ForeColor= "OrangeRed" NavigateUrl="~/spectacles.aspx" runat="server">Spectacles</asp:HyperLink>
+                     </td>
+                 </tr>
+                 <tr>
+                 <td class="style16">
+                     <asp:HyperLink ID="HyperLink12" ForeColor= "OrangeRed" NavigateUrl="~/matchs.aspx" runat="server">Matchs</asp:HyperLink>
+                     </td>
+                 </tr>
+
+                 </table>
+                 </td>
+            
+            <td  style="width: 3925px" class="style20">
+                <asp:ContentPlaceHolder  ID="MainContent" runat="server"/>
+               </td>
+        
+             <td bgcolor="#313b44" valign="top" style="width: 531px">
+             <table class="style30" 
+                     style="width: 248px; margin-left: 10px; margin-right: 10px;">
+                 <tr>
+                 <td class="style16">
+                     <asp:HyperLink ID="HyperLink3"  ForeColor= "OrangeRed" NavigateUrl="~/monuments.aspx" runat="server">Monuments et attractions</asp:HyperLink>
+                     </td>
+                 </tr>
+                 <tr>
+                 <td class="style16">
+                     <asp:HyperLink ID="HyperLink4" ForeColor= "OrangeRed" NavigateUrl="~/Salles.aspx" runat="server">Salles de spectacles et de concerts</asp:HyperLink>
                      </td>
                  </tr>
 
                  <tr>
                  <td class="style16">
-                     <asp:HyperLink ID="HyperLink5" runat="server">Musées</asp:HyperLink>
+                     <asp:HyperLink ID="HyperLink5"  ForeColor= "OrangeRed" NavigateUrl="~/Musees.aspx" runat="server">Musées</asp:HyperLink>
                      </td>
                  </tr>
                  <tr>
                  <td class="style16">
-                     <asp:HyperLink ID="HyperLink6" runat="server">Stades</asp:HyperLink>
+                     <asp:HyperLink ID="HyperLink6" ForeColor= "OrangeRed" NavigateUrl="~/stades.aspx" runat="server">Stades</asp:HyperLink>
                      </td>
                  </tr>
                  <tr>
                  <td class="style16">
-                     <asp:HyperLink ID="HyperLink7" runat="server">Parcs d&#39;affaires</asp:HyperLink>
+                     <asp:HyperLink ID="HyperLink7" ForeColor= "OrangeRed" NavigateUrl="~/parcsaffaires.aspx" runat="server">Parcs d&#39;affaires</asp:HyperLink>
                      </td>
                  </tr>
                  <tr>
                  <td class="style16">
-                     <asp:HyperLink ID="HyperLink8" runat="server">Nature</asp:HyperLink>
+                     <asp:HyperLink ID="HyperLink8"  ForeColor= "OrangeRed" NavigateUrl="~/jardins.aspx" runat="server">Nature</asp:HyperLink>
                      </td>
                  </tr>
 

@@ -77,14 +77,17 @@
     <Content Include="chambres.aspx" />
     <Content Include="channel.html" />
     <Content Include="comments.aspx" />
+    <Content Include="concerts.aspx" />
     <Content Include="confirmcancel.aspx" />
     <Content Include="contactresa.aspx" />
     <Content Include="confirm.aspx" />
+    <Content Include="spectacles.aspx" />
     <Content Include="CreateUser.aspx" />
     <Content Include="detailsCB.aspx" />
     <Content Include="detailsperso.aspx" />
     <Content Include="dropdownpictures.ascx" />
     <Content Include="error.aspx" />
+    <Content Include="expos.aspx" />
     <Content Include="gif\ad.gif" />
     <Content Include="gif\ae.gif" />
     <Content Include="gif\af.gif" />
@@ -363,6 +366,7 @@
     <Content Include="Liste.aspx" />
     <Content Include="LoginCustomer.aspx" />
     <Content Include="Loginpwd.aspx" />
+    <Content Include="matchs.aspx" />
     <Content Include="Monuments.aspx" />
     <Content Include="Musees.aspx" />
     <Content Include="parcsaffaires.aspx" />
@@ -537,6 +541,13 @@
     <Compile Include="comments.aspx.designer.cs">
       <DependentUpon>comments.aspx</DependentUpon>
     </Compile>
+    <Compile Include="concerts.aspx.cs">
+      <DependentUpon>concerts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="concerts.aspx.designer.cs">
+      <DependentUpon>concerts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="confirmcancel.aspx.cs">
       <DependentUpon>confirmcancel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -564,6 +575,13 @@
     </Compile>
     <Compile Include="confirm.aspx.designer.cs">
       <DependentUpon>confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="spectacles.aspx.cs">
+      <DependentUpon>spectacles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="spectacles.aspx.designer.cs">
+      <DependentUpon>spectacles.aspx</DependentUpon>
     </Compile>
     <Compile Include="CreateUser.aspx.cs">
       <DependentUpon>CreateUser.aspx</DependentUpon>
@@ -614,6 +632,13 @@
     </Compile>
     <Compile Include="error.aspx.designer.cs">
       <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="expos.aspx.cs">
+      <DependentUpon>expos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="expos.aspx.designer.cs">
+      <DependentUpon>expos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -672,6 +697,13 @@
     </Compile>
     <Compile Include="Loginpwd.aspx.designer.cs">
       <DependentUpon>Loginpwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="matchs.aspx.cs">
+      <DependentUpon>matchs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="matchs.aspx.designer.cs">
+      <DependentUpon>matchs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Monuments.aspx.cs">
       <DependentUpon>Monuments.aspx</DependentUpon>

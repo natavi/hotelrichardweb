@@ -106,8 +106,20 @@ body
     {
         height: 300px;
         width: 300px;
-       
+        border-spacing: 50 px;
+        border-color: Orange; 
+        border-bottom-color: Orange;
+        border-top-color: Orange;
     }
+    
+     .styletab
+    {
+        border-spacing: 50 px;
+        border-color: Orange; 
+        border-bottom-color: Orange;
+        border-top-color: Orange;
+    }
+    
     .style26
     {
         width: 140px;

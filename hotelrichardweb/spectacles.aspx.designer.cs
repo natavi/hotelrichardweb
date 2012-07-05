@@ -10,7 +10,7 @@
 namespace hotelrichardweb {
     
     
-    public partial class Salles {
+    public partial class spectacles {
         
         /// <summary>
         /// Contrôle Datarepeat.

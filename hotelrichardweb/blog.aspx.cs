@@ -19,7 +19,7 @@ namespace hotelrichardweb
             {
                 
                 
-                
+             /*   
                 
                 availdatasource.ConnectionString = ConfigurationManager.ConnectionStrings["ApplicationServices"].ConnectionString;
                 availdatasource.SelectParameters["today"].DefaultValue = System.DateTime.Today.ToShortDateString();      
@@ -31,7 +31,7 @@ namespace hotelrichardweb
                 // availdatasource2.SelectParameters["datefin"].DefaultValue = dfin.ToShortDateString();
                 // availdatasource2.Select(new DataSourceSelectArguments());
                 //DataList2.DataBind();
-
+                */
             }
         }
 

@@ -10,16 +10,16 @@
 namespace hotelrichardweb {
     
     
-    public partial class stades {
+    public partial class Musees {
         
         /// <summary>
-        /// Contrôle Datarepeat.
+        /// Contrôle Datagrid.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Datarepeat;
+        protected global::System.Web.UI.WebControls.Repeater Datagrid;
         
         /// <summary>
         /// Contrôle availdatasource.
